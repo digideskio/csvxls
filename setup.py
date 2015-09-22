@@ -27,6 +27,23 @@ setup(
     description="Functions to read from CSV or XLS(X) files interchangeably",
     author="Yuki Izumi",
     author_email="yuki@kivikakk.ee",
+    url="https://github.com/kivikakk/csvxls",
+    long_description="""
+Two functions to aid in reading CSV and XLS/XLSX files interchangeably,
+while respecting Unicode.
+
+read_csv_or_xls does its best to read its data argument (should be
+bytes) as an Excel file.  If it fails, it tries to decode it as UTF-8.
+If you hand it a (Unicode) string, it'll just return it.
+
+utf8_reader gives you a CSV reader (like the csv library's) which
+decodes its argument as UTF-8; the generator yields Unicode strings.
+    """,
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Programming Language :: Python :: 2",
+        "Programming Language :: Python :: 3"
+    ],
     license="kindest",
     version="0.2",
     packages=["csvxls"],
