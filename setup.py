@@ -28,7 +28,7 @@ setup(
     author="Yuki Izumi",
     author_email="yuki@kivikakk.ee",
     license="kindest",
-    version="0.1",
+    version="0.2",
     packages=["csvxls"],
     install_requires=["six>=1,<2", "xlrd==0.9.3"],
     tests_require=['pytest'],
