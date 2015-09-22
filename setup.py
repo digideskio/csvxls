@@ -24,7 +24,7 @@ class PyTest(TestCommand):
 
 setup(
     name="csvxls",
-    description="Functions to read from CSV or XLS(S) files interchangeably",
+    description="Functions to read from CSV or XLS(X) files interchangeably",
     author="Yuki Izumi",
     author_email="yuki@kivikakk.ee",
     license="kindest",
